@@ -1,0 +1,4 @@
+build/
+include/
+libexample/libexample.so
+libexample/src/hello.o

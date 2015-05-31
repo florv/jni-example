@@ -1,1 +1,26 @@
-# Example code illustrating JNI usage
+# Description
+
+The goal of this mini-project is to illustrate the usage of the Java Native
+Interface (JNI). A Makefile is used to compile the project so that every
+details about the building phases are exposed:
+
+1. Compilation of the `libexample.so` library
+2. Compilation of the `JNIExample` java class
+3. Generation of the header containing native methods from the `JNIExample`
+   class
+4. Compilation of the native methods binding the function exposed in libexample
+   to the Java language
+
+This project as been tested on GNU/Linux but it should be usable without
+modification on any POSIX system where a C compiler, GNU Make and a Java SDK
+are installed.
+
+# Usage
+
+Compile with `make`, run with `make run`.
+
+# Troobleshooting
+
+* Ensure you have a working C compiler.
+* Ensure the various binaries distributed with the Java SDK are in your PATH.
+* Set `JAVA_HOME` to the locatation of the Java SDK.
